@@ -1,0 +1,23 @@
+# Runs the same gate as ./ci.sh inside Ubuntu. There are no macOS runners
+# here: run ./ci.sh locally on macOS before pushing.
+name: ci
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  linux:
+    runs-on: ubuntu-latest
+    container:
+      image: ubuntu:24.04
+    strategy:
+      matrix:
+        odin: [dev-2026-09]   # add the next monthly release here when it lands
+    steps:
+      - run: apt-get update -qq && apt-get install -y -qq git ca-certificates >/dev/null
+      - uses: actions/checkout@v4
+      - name: gate
+        env:
+          ODIN_TAG: ${{ matrix.odin }}
+        run: bash scripts/ci_linux.sh

@@ -1,0 +1,3 @@
+* text=auto eol=lf
+*.odin linguist-language=Odin
+*.png binary
