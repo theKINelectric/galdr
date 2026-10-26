@@ -70,7 +70,6 @@ Then `import gd "galdr:galdr"`. It needs a recent Odin (CI pins
 | [CLI reference](docs/CLI.md) | Every `galdr` command and flag, for shell scripts |
 | [API conventions](docs/API.md) | Naming, argument order, memory rules, stability tiers |
 | [Terminals](docs/TERMINALS.md) | What Galdr asks the terminal, and which terminals have been tried |
-| [Roadmap](docs/ROADMAP.md) | What's done and what's next |
 
 Code in the README, tutorial and cookbook is copied from compiled, tested
 example packages, and CI fails if the two drift apart.
@@ -167,7 +166,7 @@ License: zlib. See `LICENSE`, `CHANGELOG.md`, `CONTRIBUTING.md` and `SECURITY.md
 
 ## Roadmap
 
-- [x] Phase 0: release blockers (see `docs/ROADMAP.md`)
+- [x] Phase 0: release blockers
 - [x] Phase 1: Unicode 16 graphemes, terminal probing, renderer efficiency, correctness suites
 - [x] Phase 2: API review, keymaps, focus, zones, layers, filter, text area, tree, forms, motion, diagnostics
 - [ ] Phase 3: Windows backend, `galdr spin` / `table`, syntax highlighting, images

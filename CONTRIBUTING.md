@@ -35,4 +35,4 @@ Tried Galdr in a terminal that has no row yet in `docs/TERMINALS.md`? A report i
 Imperative subject (≤ 72 chars), and a body that explains *why*. Add a CHANGELOG line for anything a user would notice.
 
 ## Provenance
-Read `PROVENANCE.md`. Don't port code from other TUI libraries. If an API starts to mirror another library's shape, recompose it.
+Don't port code from other TUI libraries. If an API starts to mirror another library's shape, recompose it.
